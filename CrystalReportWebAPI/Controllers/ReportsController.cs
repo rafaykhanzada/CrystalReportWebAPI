@@ -10,7 +10,7 @@ namespace CrystalReportWebAPI.Controllers
         [AllowAnonymous]
         [Route("Financial/VarianceAnalysisReport")]
         [HttpGet]
-        [ClientCacheWithEtag(60)]  //1 min client side caching
+        [ClientCacheWithEtag(1)]  //1 min client side caching
         public HttpResponseMessage FinancialVarianceAnalysisReport()
         {
             string reportPath = "~/Reports";
